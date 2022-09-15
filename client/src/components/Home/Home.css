@@ -1,0 +1,7 @@
+.contenedorHome{
+    background-color:#fcecd8;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(100px, 1fr));
+    justify-items: center;
+    margin-top: 50px;
+}
