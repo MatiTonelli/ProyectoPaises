@@ -40,12 +40,13 @@
 .pID {
   font-size: 3vh;
     margin-top: -0vh;
-    margin-left: 2vh;
+
 }
 
 .botonXSelected {
-  margin-top: -0.5vh;
-  margin-left: 3vh;
+  position: relative;
+  left: 2.6vh;
+  bottom: 0.5vh;
   height: 5.5vh;
   border-top-right-radius: 40px;
   border-bottom-right-radius: 40px;
@@ -68,9 +69,12 @@ display: flex;
   padding: 0.5vh;
   padding-right: 2.5vh;
   border-radius: 30px;
+  margin-left: 1vh;
+  margin-right: 1vh;
   height: 4.5vh;
   width: 10vh;
   background-color: white;
+  justify-content: space-between;
 }
 
 .divCountriesSelected {
