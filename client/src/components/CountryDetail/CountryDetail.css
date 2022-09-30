@@ -110,7 +110,7 @@
 
 .contenedorActividad{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 
 .estrellitas{
@@ -145,4 +145,25 @@
 
 .seasonsIconos{
     margin-left: 0;
+    display: flex;
+    justify-content: center;
+    width: 15vh;
+}
+
+.durationActivity{
+    margin: 0;
+    padding: 0;
+    width: 15vh;
+}
+
+.divStars{
+    width: 15vh;
+}
+
+.nameActivity{
+    width: 15vh;
+}
+
+.contenedorActividad h3{
+    width: 15vh;
 }

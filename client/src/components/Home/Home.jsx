@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 import NavBar from "../NavBar/NavBar";
 import {
   filterByContinent,
-  filterBySearch,
   getCountries,
   orderCountries,
 } from "../../redux/actions";

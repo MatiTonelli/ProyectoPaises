@@ -1,5 +1,5 @@
 import axios from 'axios'
-import { GET_COUNTRIES, GET_COUNTRY_DETAIL, ORDER_COUNTRIES, CREATE_ACTIVITY, GET_ACTIVITIES, FILTER_BY_CONTINENT, GET_ACTIVITIES_BY_COUNTRY } from '../constants'
+import { GET_COUNTRIES, GET_COUNTRY_DETAIL, ORDER_COUNTRIES, CREATE_ACTIVITY, GET_ACTIVITIES, FILTER_BY_CONTINENT } from '../constants'
 
 export function getCountries(name, activityId) {
     return async function (dispatch) {

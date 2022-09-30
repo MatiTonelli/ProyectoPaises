@@ -8,7 +8,6 @@ import {
     POP_DESC,  
     FILTER_BY_CONTINENT, 
     GET_ACTIVITIES,
-    GET_ACTIVITIES_BY_COUNTRY,
         } from "../constants"
 const initialState = {
     countriesLoaded: [],
@@ -55,6 +54,8 @@ function rootReducer(state = initialState, action) {
                             } else {
                                 return -1
                             }
+                        default:
+                            return state
                     }
                 })
             }

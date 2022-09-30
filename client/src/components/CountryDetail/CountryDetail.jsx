@@ -2,7 +2,7 @@ import React from "react";
 import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
-import { getActivitiesByCountry, getCountryDetail } from "../../redux/actions";
+import { getCountryDetail } from "../../redux/actions";
 import Loading from "../Loading/Loading";
 import "./CountryDetail.css";
 
@@ -10,7 +10,6 @@ export default function CountryDetail(props) {
   const dispatch = useDispatch();
   let { name, id, flag, capital, subregion, area, poblacion, activities } =
     useSelector((state) => state.countryDetail);
-  const [, set] = useState("");
   let buscado = props.match.params.id;
   const [loading, setLoading] = useState(false);
 
@@ -49,7 +48,7 @@ export default function CountryDetail(props) {
     setTimeout(() => {
       setLoading(false);
     }, "700");
-  }, [dispatch]);
+  }, [buscado, dispatch]);
 
   return (
     <div>
@@ -153,8 +152,9 @@ export default function CountryDetail(props) {
 function Activity({ name, dificulty, duration, seasons }) {
   return (
     <div className="contenedorActividad">
-      <p>{name}</p>
-      <span>
+      <p className="nameActivity">{name}</p>
+
+      <span className="divStars">
         {Array.apply(null, Array(dificulty)).map(() => {
           return (
             <img
@@ -165,7 +165,9 @@ function Activity({ name, dificulty, duration, seasons }) {
           );
         })}
       </span>
-      <p>{duration + " hrs"}</p>
+
+      <p className="durationActivity">{duration + " hrs"}</p>
+
       <div className="seasonsIconos">
       {seasons.map((s) => {
         if (s.name === "SUMMER") {
@@ -206,6 +208,7 @@ function Activity({ name, dificulty, duration, seasons }) {
         }
       })}
       </div>
+
     </div>
   );
 }

@@ -1,14 +1,10 @@
 import React from "react";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import {
-  orderCountries,
   createActivity,
-  getCountries,
-  getOrderedCountries,
 } from "../../redux/actions";
-import { ALPHA_ASC } from "../../redux/constants";
 import "./CreateActivity.css";
 
 export default function CreateActivity() {
@@ -26,7 +22,6 @@ export default function CreateActivity() {
     autumn: false,
   });
   const [errors, setErrors] = React.useState({});
-  const [, setOrder] = useState("");
   const [success, setSuccess] = useState(false);
 
   function validate(type, input) {
