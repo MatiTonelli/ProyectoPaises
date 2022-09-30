@@ -1,0 +1,47 @@
+.contenedorPaginate{
+    display: flex;
+    flex-direction: column;
+    margin-top: 4vh;
+    padding-left: 0vh;
+    padding-right: 7vh;
+    background-color:#e3dac9;
+}
+.normalButtonPage:hover{
+    cursor: pointer;
+    transform: scale(1.15);
+    position: relative;
+    box-shadow: 8px 8px 7px 1px rgb(0 0 0 / 50%);
+    transition: 0.15s;
+}
+.button{
+    z-index: 1;
+    font-size: 2vh;
+    font-weight: 700;
+    background-color: rgba(255, 255, 255, 0.9);
+    width: 7vh;
+    height: 6vh;
+    margin: -1vh 0px 0vh 0px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top: 2px solid rgba(0, 0, 0, 0.8);
+    border-right: 2px solid rgba(0, 0, 0, 0.8);
+    border-left: 0px;
+    border-bottom: 0px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.8);
+}
+
+.currentButtonPage{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.9);
+    width: 8vh;
+    height: 7vh;
+    box-shadow: 7px 7px 15px rgb(0 0 0 / 70%);
+}
+
+.arrowButtons:hover{
+    cursor: pointer;
+    transform: scale(1.15);
+    position: relative;
+    box-shadow: 8px 8px 7px 1px rgb(0 0 0 / 50%);
+    transition: 0.4s;
+}

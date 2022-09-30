@@ -4,21 +4,23 @@ const { DataTypes } = require('sequelize');
 module.exports = (sequelize) => {
   // defino el modelo
   sequelize.define('activity', {
+    id: {
+      type: DataTypes.INTEGER,
+      autoIncrement: true,
+      primaryKey: true,
+    },
     name: {
       type: DataTypes.STRING,
     },
-    dificult: {
+    dificulty: {
         type: DataTypes.INTEGER,
         validate: {
             min: 0,
             max: 5
         }
     },
-    duracion: {
-        type: DataTypes.INTEGER
-    },
-    season: {
-        type: DataTypes.STRING
+    duration: {
+        type: DataTypes.STRING,
     }
   },
   {timestamps: false});

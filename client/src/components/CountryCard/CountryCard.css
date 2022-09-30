@@ -1,12 +1,12 @@
 .contenedorCard{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    margin: 40px;
-    margin-bottom: 60px;
-    width: 22vw;
-    height: 312px;
+    justify-content:center;
+    margin: 1vh;
+    width: 18vw;
+    height: 38vh;
     background-color: #f5f5f5;
     box-shadow: -1px 1px 8px rgb(0 0 0 / 40%);
     text-align: center;
@@ -20,3 +20,27 @@
     cursor: pointer;
     box-shadow: -1px 8px 15px rgb(0 0 0 / 50%);
 }
+.bandera{
+    max-height: 40%;
+    border: 1px solid rgb(0 0 0 / 70%);
+}
+
+.texto{
+    display: inline-block;
+    align-items: end;
+    flex-wrap: wrap;
+}
+
+h1{
+    font-size: 3vh;
+    font-weight: 900;
+    line-height: 4vh;
+}
+
+.hr{
+    width: 25vh;
+    border: none;
+    height: 1px;
+    background-color: black;
+}
+

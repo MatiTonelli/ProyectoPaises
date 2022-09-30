@@ -1,0 +1,89 @@
+.contenedorNavBar{
+    display: flex;
+    justify-content: space-between;
+    background-color:#e3dac9;
+}
+
+.logoWorld{
+    margin-left: 3vh;
+    margin-top: 2vh;
+    width: 40vh;
+}
+
+.contenedorFiltersAndCreate{
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-right: 5vh;
+    margin-bottom: 3vh;
+}
+
+.searchInput{
+    height: 4vh;
+    width: 45vh;
+    border-radius: 15px;
+}
+
+
+.selectOrder{
+    height: 3.2vh;
+    border-radius: 10px;
+    width: 20vh;
+}
+
+.selects{
+    height: 3.2vh;
+    border-radius: 10px;
+    width: 15vh;
+}
+
+.iconosNav{
+    height: 4vh;
+    margin-top: 5vh;
+    margin-bottom: -1.5vh;
+    margin-right: 1vh;
+}
+
+.filterBy{
+    display: flex;
+}
+
+.iconosNavFilters{
+    height: 2.5vh;
+    width: 2.5vh;
+    margin-bottom: -0.8vh;
+    margin-right: 0.7vh;
+}
+
+.filtros{
+    margin-top: 0.1vh;
+    height: 2.7vh;
+}
+
+.createButton{
+    padding: 3vh;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid black;
+    position: fixed;
+    right: 8vh;
+    bottom: 25vh;
+    z-index: 10;
+    border-radius: 40px;
+    box-shadow: -1px 10px 10px black;
+}
+
+.createButton:hover img{
+    display: none;
+}
+
+.createButton:hover:before{
+    padding:3vh;
+    font-size: 3vh;
+    font-weight: 600;
+    content: "Create an Activity!";
+}
+
+.createHomeButton{
+    height: 6vh;
+}

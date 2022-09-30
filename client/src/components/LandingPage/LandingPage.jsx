@@ -1,11 +1,12 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
+import './LandingPage.css'
 
 export default function LandingPage() {
   return (
-    <div>
-      <h1>Pagina de espera</h1>
-      <NavLink to="/countries">Home</NavLink>
+    <div className="contenedorLanding">
+      <img className="logoLanding" src="https://i.ibb.co/ZGbCxNM/logo-World.png" alt="" />
+      <Link className="buttonLanding" to="/home">Home</Link>
     </div>
   );
 }

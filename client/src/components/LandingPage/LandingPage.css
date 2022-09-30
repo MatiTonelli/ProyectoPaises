@@ -1,0 +1,31 @@
+.contenedorLanding{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-image: url(https://rare-gallery.com/uploads/posts/569676-blue-purple.jpg);
+    background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 60vh;
+}
+
+.logoLanding{
+    width: 65vh;
+    margin-top: 20vh;
+}
+
+.buttonLanding{
+    position: absolute;
+    bottom: 40vh;
+    padding: 3vh;
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 20vh;
+    font-size: 4vh;
+}
+
+.buttonLanding:hover{
+    box-shadow: 4px 4px 1px black;
+    transition: 0.4s;
+    background-color: white;
+    border: 3px solid black;
+}

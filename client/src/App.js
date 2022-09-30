@@ -11,9 +11,9 @@ function App() {
     <React.Fragment>
       <Router>
         <Route exact path="/" component={LandingPage} />
-        <Route exact path="/countries" component={Home} />
-        <Route path="/countries/:id" component={CountryDetail} />
-        <Route path="/activities" component={CreateActivity} />
+        <Route exact path="/home" component={Home} />
+        <Route path="/country/:id" component={CountryDetail} />
+        <Route path="/createActivity" component={CreateActivity} />
       </Router>
     </React.Fragment>
   );

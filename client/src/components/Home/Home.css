@@ -1,7 +1,65 @@
-.contenedorHome{
-    background-color:#fcecd8;
-    display: grid;
-    grid-template-columns: repeat(4, minmax(100px, 1fr));
-    justify-items: center;
-    margin-top: 50px;
+.contenedorHome {
+  background-color: #e3dac9;
 }
+
+.contenedorCountries {
+  position: relative;
+
+  background-image: url(../../images/own-globe.png);
+  background-color: #573e307e;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 50px;
+  width: 200vh;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  border-top: 1px solid #000000;
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+}
+.countriesAndPaginate {
+  display: flex;
+}
+
+.divPaises {
+  width: 40vh;
+  margin: 20px;
+}
+
+.footerHome{
+  background-color: #7a6851;
+  margin-bottom: -18px;
+}
+
+.logos{
+  width: 7vh;
+  margin-left: 4vh;
+  margin-right: 4vh;
+  border-radius: 15px;
+}
+
+.logos:hover{
+  transform: scale(1.2);
+  transition: 1.2s;
+  box-shadow: -1px 7px 8px #000000;
+  background-color: rgba(0, 0, 0, 0.377);
+}
+.socials{
+  display: flex;
+  justify-content: center;
+}
+
+.copyRight{
+  text-align: center;
+  font-style: italic;
+}
+
+.hrFooter{
+  margin-bottom: -1vh;
+  width: 50vh;
+  border: none;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.507);
+}
+

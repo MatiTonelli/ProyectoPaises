@@ -1,11 +1,16 @@
-import React, { Component } from "react";
+import React from "react";
 import "./CountryCard.css";
+
 
 function CountryCard(props) {
   return (
     <div className="contenedorCard">
-      <h1>{props.name}</h1>
-      <h2>{props.continent}</h2>
+      <img className="bandera" src={props.flag} alt="" />
+      <div className="texto">
+        <h1>{props.name}</h1>
+        <hr className="hr"/>
+        <h5>{props.continent}</h5>
+      </div>
     </div>
   );
 }
