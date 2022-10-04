@@ -5,13 +5,13 @@ export function getCountries(name, activityId) {
     return async function (dispatch) {
         let json;
         if(name && activityId){
-            json = await axios.get(`http://localhost:3001/countries/?name=${name}&activityId=${activityId}`)
+            json = await axios.get(`/countries/?name=${name}&activityId=${activityId}`)
         } else if(name){
-            json = await axios.get(`http://localhost:3001/countries/?name=${name}`)
+            json = await axios.get(`/countries/?name=${name}`)
         } else if(activityId){
-            json = await axios.get(`http://localhost:3001/countries/?activityId=${activityId}`)
+            json = await axios.get(`/countries/?activityId=${activityId}`)
         } else {
-            json = await axios.get("http://localhost:3001/countries")
+            json = await axios.get("/countries")
         }
         return dispatch({
             type: GET_COUNTRIES,
@@ -39,7 +39,7 @@ export function filterByContinent(continent) {
 export function createActivity(data) {
     return async function (dispatch) {
         try {
-            await axios.post("http://localhost:3001/activities", data)
+            await axios.post("/activities", data)
             return dispatch({
                 type: CREATE_ACTIVITY,
                 payload: data
@@ -54,7 +54,7 @@ export function createActivity(data) {
 export function getCountryDetail(id) {
     return async function (dispatch) {
         try {
-            let json = await axios.get(`http://localhost:3001/countries/${id}`)
+            let json = await axios.get(`/countries/${id}`)
             return dispatch({
                 type: GET_COUNTRY_DETAIL,
                 payload: json.data
@@ -68,7 +68,7 @@ export function getCountryDetail(id) {
 export function getActivities() {
     return async function (dispatch) {
         try {
-            let json = await axios.get(`http://localhost:3001/activities`)
+            let json = await axios.get(`/activities`)
             return dispatch({
                 type: GET_ACTIVITIES,
                 payload : json.data
