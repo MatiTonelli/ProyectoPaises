@@ -1,5 +1,5 @@
 import { 
-    ORDER_COUNTRIES, 
+    ORDER_COUNTRIES,  
     GET_COUNTRIES, 
     GET_COUNTRY_DETAIL, 
     ALPHA_ASC, 
@@ -9,6 +9,7 @@ import {
     FILTER_BY_CONTINENT, 
     GET_ACTIVITIES,
         } from "../constants"
+
 const initialState = {
     countriesLoaded: [],
     countryDetail: {},

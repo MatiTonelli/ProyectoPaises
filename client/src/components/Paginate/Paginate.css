@@ -45,3 +45,10 @@
     box-shadow: 8px 8px 7px 1px rgb(0 0 0 / 50%);
     transition: 0.4s;
 }
+
+
+@media screen and (max-width: 822px){
+    .button{
+        height: 10vh;
+    }
+}

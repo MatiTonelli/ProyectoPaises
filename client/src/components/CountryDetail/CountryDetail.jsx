@@ -14,33 +14,38 @@ export default function CountryDetail(props) {
   const [loading, setLoading] = useState(false);
 
   const km2 = (numero) => {
-    let resultado = ''
-    let str = String(numero)
+    let resultado = "";
+    let str = String(numero);
     let j = 0;
     for (let i = str.length - 1; i >= 0; i--) {
-      if(j % 3 === 0 && j !== 0){
-        resultado = '.' + resultado
+      if (j % 3 === 0 && j !== 0) {
+        resultado = "." + resultado;
       }
-      resultado = str[i] + resultado
+      resultado = str[i] + resultado;
       j++;
     }
-    resultado += ' km'
-    return (<h2 className="datos">{resultado}<sup>2</sup></h2>)
-  }
+    resultado += " km";
+    return (
+      <h2 className="datos">
+        {resultado}
+        <sup>2</sup>
+      </h2>
+    );
+  };
 
   const population = (numero) => {
-    let resultado = ''
-    let str = String(numero)
+    let resultado = "";
+    let str = String(numero);
     let j = 0;
     for (let i = str.length - 1; i >= 0; i--) {
-      if(j % 3 === 0 && j !== 0){
-        resultado = '.' + resultado
+      if (j % 3 === 0 && j !== 0) {
+        resultado = "." + resultado;
       }
-      resultado = str[i] + resultado
+      resultado = str[i] + resultado;
       j++;
     }
-    return (<h2 className="datos">{resultado}</h2>)
-  }
+    return <h2 className="datos">{resultado}</h2>;
+  };
 
   useEffect(() => {
     dispatch(getCountryDetail(buscado));
@@ -52,24 +57,33 @@ export default function CountryDetail(props) {
 
   return (
     <div>
-      <img className="logoWorldDetail" src="https://i.ibb.co/W5sCty9/logo-World-Espejo.png" alt="logo-World" border="0" />
+      <img
+        className="logoWorldDetail"
+        src="https://i.ibb.co/W5sCty9/logo-World-Espejo.png"
+        alt="logo-World"
+        border="0"
+      />
+      <Link to={"/home"}>
+        <img
+          className="arrowBack"
+          src="https://cdn-icons-png.flaticon.com/512/507/507257.png"
+          alt=""
+        />
+      </Link>
       <div className="contenedor">
-        <Link to={"/home"}>
-          <img
-            className="arrowBack"
-            src="https://cdn-icons-png.flaticon.com/512/507/507257.png"
-            alt=""
-          />
-        </Link>
         {loading ? (
           <div className="loadingCountry">
             <Loading />
           </div>
         ) : (
           <div className="contenedorDetail">
-            <img className="banderita" src={flag} alt="Country flag" />
-            <p className="nombrePais">{name}</p>
-            <p className="id">({id})</p>
+            <div className="headDetail">
+              <div className="divNombreId">
+                <p className="nombrePais">{name}</p>
+                <p className="id">({id})</p>
+              </div>
+              <img className="banderita" src={flag} alt="Country flag" />
+            </div>
             <hr className="hrDetail" />
             <div className="contenedorDatos">
               <div className="divsTituloDato">
@@ -122,7 +136,8 @@ export default function CountryDetail(props) {
           </div>
         )}
       </div>
-      <br /><br />
+      <br />
+      <br />
       <footer className="footerHome footerDetail">
         <hr />
         <br />
@@ -142,7 +157,7 @@ export default function CountryDetail(props) {
             />
           </a>
         </div>
-        <hr className="hrFooter"/>
+        <hr className="hrFooter" />
         <p className="copyRight">Copyright © Matias Tonelli 2022</p>
       </footer>
     </div>
@@ -169,48 +184,45 @@ function Activity({ name, dificulty, duration, seasons }) {
       <p className="durationActivity">{duration + " hrs"}</p>
 
       <div className="seasonsIconos">
-      {seasons.map((s) => {
-        if (s.name === "SUMMER") {
-          return (
-            <img
-              className="seasonsIcons"
-              src="https://cdn-icons-png.flaticon.com/512/2698/2698194.png"
-              alt="sun"
-            />
-          );
-        }
-        if (s.name === "WINTER") {
-          return (
-            <img
-              className="seasonsIcons"
-              src="https://cdn-icons-png.flaticon.com/512/2530/2530064.png"
-              alt="snow flake"
-            />
-          );
-        }
-        if (s.name === "AUTUMN") {
-          return (
-            <img
-              className="seasonsIcons"
-              src="https://cdn-icons-png.flaticon.com/512/3471/3471417.png"
-              alt="autumn leaf"
-            />
-          );
-        }
-        if (s.name === "SPRING") {
-          return (
-            <img
-              className="seasonsIcons"
-              src="https://cdn-icons-png.flaticon.com/512/1762/1762755.png"
-              alt="flower"
-            />
-          );
-        }
-      })}
+        {seasons.map((s) => {
+          if (s.name === "SUMMER") {
+            return (
+              <img
+                className="seasonsIcons"
+                src="https://cdn-icons-png.flaticon.com/512/2698/2698194.png"
+                alt="sun"
+              />
+            );
+          }
+          if (s.name === "WINTER") {
+            return (
+              <img
+                className="seasonsIcons"
+                src="https://cdn-icons-png.flaticon.com/512/2530/2530064.png"
+                alt="snow flake"
+              />
+            );
+          }
+          if (s.name === "AUTUMN") {
+            return (
+              <img
+                className="seasonsIcons"
+                src="https://cdn-icons-png.flaticon.com/512/3471/3471417.png"
+                alt="autumn leaf"
+              />
+            );
+          }
+          if (s.name === "SPRING") {
+            return (
+              <img
+                className="seasonsIcons"
+                src="https://cdn-icons-png.flaticon.com/512/1762/1762755.png"
+                alt="flower"
+              />
+            );
+          }
+        })}
       </div>
-
     </div>
   );
 }
-
-

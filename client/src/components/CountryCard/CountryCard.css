@@ -20,6 +20,7 @@
     cursor: pointer;
     box-shadow: -1px 8px 15px rgb(0 0 0 / 50%);
 }
+
 .bandera{
     max-height: 40%;
     border: 1px solid rgb(0 0 0 / 70%);
@@ -43,4 +44,49 @@ h1{
     height: 1px;
     background-color: black;
 }
+
+
+@media screen and (max-width: 1856px){
+    .bandera{
+        max-height: 30%;
+    }
+    .hr{
+        width: 15vh;
+    }
+    h1{
+        font-size: 2.5vh;
+        line-height: 3.5vh;
+    }
+    .contenedorCard{
+        margin: 0;
+        height: 30vh;
+    }
+}
+
+@media screen and (max-width: 1220px){
+    
+}
+
+@media screen and (max-width: 1144px){
+    .contenedorCard{
+        margin: 2vh;
+        width: 40vh;
+    }
+
+    .hr{
+        width: 20vh;
+    }
+    h1{
+        font-size: 3vh;
+        line-height: 4vh;
+    }
+}
+
+
+@media screen and (max-width: 400px){
+    .contenedorCard{
+        width: 30vh;
+    }
+}
+
 

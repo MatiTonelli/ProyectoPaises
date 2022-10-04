@@ -27,6 +27,7 @@ export function orderCountries(data) {
     }
 }
 
+
 export function filterByContinent(continent) {
     return {
         type: FILTER_BY_CONTINENT,

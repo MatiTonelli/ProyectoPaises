@@ -12,6 +12,8 @@
     border: 1px solid black;
     width: 120vh;
     border-radius: 40px;
+    margin-left: 10vh;
+    margin-right: 10vh;
 }
 
 .contenedorDetail:hover{
@@ -20,22 +22,18 @@
 }
 
 .nombrePais{
+    margin: 0;
     text-align: center;
     font-weight: 700;
-    font-size: 6vh;
-    position: absolute;
-    left: 50vh;
-    top: 18vh;
+    font-size: 4vh;
     text-shadow: 3px 3px 5px rgb(0, 0, 0);
 }
 
 .id{
+    margin: 0;
     text-align: center;
     font-weight: 400;
     font-size: 4vh;
-    position: absolute;
-    left: 50vh;
-    top: 28vh;
     text-shadow: 1px 1px 5px rgb(0, 0, 0);
 }
 
@@ -45,10 +43,9 @@
 
 .banderita{
     width: 30vh;
-    position: relative;
-    left: 90vh;
     border-top-right-radius: 40px;
-    margin-bottom: 0;
+    margin-bottom: 1vh;
+    max-height: 20vh;
 }
 
 .hrDetail{
@@ -67,6 +64,7 @@
 
 .divsTituloDato{
     margin: 5vh;
+    width: 20vh;
 }
 
 .titulos{
@@ -148,22 +146,215 @@
     display: flex;
     justify-content: center;
     width: 15vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
 }
 
 .durationActivity{
     margin: 0;
     padding: 0;
     width: 15vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
 }
 
 .divStars{
     width: 15vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
 }
 
 .nameActivity{
     width: 15vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
 }
 
 .contenedorActividad h3{
     width: 15vh;
 }
+
+.headDetail{
+    display: flex;
+    justify-content: space-between;
+}
+
+.divNombreId{
+    margin-left: 5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+@media screen and (max-width: 800px){
+    .logoWorldDetail{
+        width: 45vh;
+    }
+    .arrowBack{
+        height: 7vh;
+        margin-left: 2vh;
+    }
+    .headDetail{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .banderita{
+        border-top-right-radius: 0px;
+    }
+    .divNombreId{
+        margin: 0px;
+        align-items: center;
+    }
+    .contenedorDetail{
+        margin-top: 20vh;
+    }
+    .titulos{
+        font-size: 2.5vh;
+        font-weight: 700;
+    }
+    
+    .datos{
+        font-size: 1.5vh;
+        font-weight: 400;
+    }
+
+    .nameActivity{
+        width: 12vh;
+    }
+    
+    .divStars{
+        width: 12vh;
+    }
+    
+    .durationActivity{
+        width: 12vh;
+    }
+    
+    .seasonsIconos{
+        width: 12vh;
+    }
+    
+    .contenedorActividad h3{
+        width: 12vh;
+    }
+
+    .estrellitas{
+        width: 2vh;
+    }
+    
+    .seasonsIcons{
+        height: 3vh;
+    }
+}
+
+@media screen and (max-width: 670px){
+    .contenedorActividad{
+        justify-content: center;
+    }
+    .contenedorDatos{
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .titulos{
+        font-size: 3vh;
+        font-weight: 700;
+    }
+    
+    .datos{
+        font-size: 1.5vh;
+        font-weight: 400;
+    }
+
+    .divsTituloDato{
+        margin: 2vh;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .nombrePais{
+        width: 50vh;
+    }
+    .logoWorldDetail{
+        width: 30vh;
+        right: -20px;
+    }
+    .arrowBack{
+        height: 5vh;
+    }
+    .contenedorDetail{
+        margin-top: 15vh;
+        margin-left: 0;
+        margin-right: 0;
+        border-right: none;
+        border-left: none;
+        border-radius: 0;
+    }
+    .nameActivity{
+        font-size: 1.8vh;
+    }
+    
+    .divStars{
+        font-size: 1.8vh;
+    }
+    
+    .durationActivity{
+        font-size: 1.8vh;
+    }
+    
+    .seasonsIconos{
+        font-size: 1.8vh;
+    }
+    
+    .contenedorActividad h3{
+        font-size: 1.8vh;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .nombrePais{
+        font-size: 3vh;
+    }
+    .id{
+        font-size: 3vh;
+    } 
+
+    .nameActivity{
+        width: 9vh;
+        font-size: 1.2vh;
+    }
+    
+    .divStars{
+        width: 9vh;
+        font-size: 1.2vh;
+    }
+    
+    .durationActivity{
+        width: 9vh;
+        font-size: 1.2vh;
+    }
+    
+    .seasonsIconos{
+        width: 9vh;
+        font-size: 1.2vh;
+    }
+    
+    .contenedorActividad h3{
+        width: 9vh;
+        font-size: 1.2vh;
+    }
+
+    .seasonsIcons{
+        height: 2.5vh;
+    }
+}
+

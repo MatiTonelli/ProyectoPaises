@@ -71,7 +71,7 @@ export default function NavBar({ setOrder, setPage, filters, setFilters }) {
       />
       <div>
         <img
-          className="iconosNav"
+          className="searchIcon iconosNav"
           src="https://cdn-icons-png.flaticon.com/512/622/622669.png"
           alt=""
         />
@@ -90,7 +90,7 @@ export default function NavBar({ setOrder, setPage, filters, setFilters }) {
             src="https://cdn-icons-png.flaticon.com/512/117/117221.png"
             alt=""
           />
-          <select name="order" className="selectOrder" onChange={handleOrder}>
+          <select name="order" className="selects selectOrder" onChange={handleOrder}>
             <option value=""> --No order-- </option>
             <option value={ALPHA_ASC}>Alphabetical ↿↾</option>
             <option value={ALPHA_DESC}>Alphabetical ⇃⇂</option>

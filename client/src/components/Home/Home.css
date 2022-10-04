@@ -3,8 +3,6 @@
 }
 
 .contenedorCountries {
-  position: relative;
-
   background-image: url(../../images/own-globe.png);
   background-color: #573e307e;
   display: flex;
@@ -24,7 +22,7 @@
 
 .divPaises {
   width: 40vh;
-  margin: 20px;
+  margin: 3vh;
 }
 
 .footerHome{
@@ -61,5 +59,19 @@
   border: none;
   height: 1px;
   background-color: rgba(0, 0, 0, 0.507);
+}
+
+@media screen and (max-width: 1857px){
+  
+}
+
+@media screen and (max-width: 1240px){
+  .divPaises{
+    margin: 1vh;
+  }
+}
+
+@media screen and (max-width: 1080px){
+  
 }
 

@@ -25,19 +25,15 @@
     border-radius: 15px;
 }
 
-
-.selectOrder{
-    height: 3.2vh;
-    border-radius: 10px;
-    width: 20vh;
-}
-
 .selects{
     height: 3.2vh;
     border-radius: 10px;
     width: 15vh;
 }
 
+.selectOrder{
+    width: 20vh;
+}
 .iconosNav{
     height: 4vh;
     margin-top: 5vh;
@@ -86,4 +82,74 @@
 
 .createHomeButton{
     height: 6vh;
+}
+
+@media screen and (max-width: 1500px){
+    .logoWorld{
+       width: 35vh;
+    }
+
+    .searchInput{
+        width: 40vh;
+    }
+}
+
+@media screen and (max-width: 1360px){
+    .logoWorld{
+       width: 30vh;
+    }
+
+    .searchInput{
+        width: 35vh;
+    }
+}
+
+@media screen and (max-width: 1080px){
+    .contenedorNavBar{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logoWorld{
+        margin-bottom: 3vh;
+    }
+
+    .searchInput{
+        margin-bottom: 3vh;
+        width: 60vh;
+    }
+
+    .selects{
+        height: 4vh;
+    }
+
+    .contenedorFiltersAndCreate{
+        display: flex;
+        flex-direction: row;
+    }
+    
+}
+
+@media screen and (max-width: 550px){
+    .contenedorFiltersAndCreate{
+        display: flex;
+        justify-content: flex-end;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .searchInput{
+        width: 50vh;
+    }
+
+    .searchIcon{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 450){
+    .searchInput{
+        width: 20vh;
+    }
 }

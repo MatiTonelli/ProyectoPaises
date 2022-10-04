@@ -106,18 +106,6 @@ router.get('/activities', async(req, res, next) => {
     }
 }) 
 
-router.get('/activities/:countryId', async(req, res, next) => { 
-    const {countryId} = req.params
-    try {
-        let country = await Country.findOne( { where: {
-            id: countryId
-        }})
-        let activities = await country.getActivities()
-        res.send(activities)
-    } catch (error) {
-        res.send(error)
-    }
-}); 
 
 router.post('/activities', async (req, res, next) => {
     try {
