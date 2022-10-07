@@ -34,7 +34,9 @@
 }
 
 .divsInputs {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .pID {
@@ -93,11 +95,11 @@ display: flex;
 .titulosCreate {
   text-align: center;
 }
-
+/* 
 .seasonsNames {
   display: inline-block;
 }
-
+ */
 .dificultyDurationSeasons {
   display: flex;
   justify-content: space-evenly;
@@ -127,53 +129,6 @@ display: flex;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-}
-
-.container input {
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
-  height: 0;
-  width: 0;
-}
-
-.checkmark {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 2vh;
-  width: 2vh;
-  background-color: #eee;
-}
-
-.container:hover input ~ .checkmark {
-  background-color: #ccc;
-}
-
-.container input:checked ~ .checkmark {
-  background-color: #2196f3;
-}
-
-.checkmark:after {
-  content: "";
-  position: absolute;
-  display: none;
-}
-
-.container input:checked ~ .checkmark:after {
-  display: block;
-}
-
-.container .checkmark:after {
-  left: 6px;
-  top: 2px;
-  width: 3px;
-  height: 7px;
-  border: solid white;
-  border-width: 0 3px 3px 0;
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg);
 }
 
 .dicultyInput {
@@ -247,6 +202,7 @@ display: flex;
   border-radius: 4px;
   cursor: pointer;
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+  z-index: 2;;
 }
 
 .fondoBlur {
@@ -254,4 +210,10 @@ display: flex;
   width: 100%;
   height: 100%;
   background-color: #000000a8;
+}
+
+@media screen and (max-width: 380px){
+  .dificultyDurationSeasons{
+    flex-direction: column;
+  }
 }
