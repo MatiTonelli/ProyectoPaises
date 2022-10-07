@@ -97,6 +97,7 @@ export default function NavBar({ setOrder, setPage, filters, setFilters }) {
             <option value={POP_ASC}>Population ↿↾</option>
             <option value={POP_DESC}>Population ⇃⇂</option>
           </select>
+          <Link className="createButton" to="/createActivity"><img className="createHomeButton" src="https://cdn-icons-png.flaticon.com/512/2420/2420290.png" alt="" /></Link>
         </div>
         <hr />
         <div className="filterBy">
@@ -126,7 +127,7 @@ export default function NavBar({ setOrder, setPage, filters, setFilters }) {
             })}
           </select>
         </div>
-        <Link className="createButton" to="/createActivity"><img className="createHomeButton" src="https://cdn-icons-png.flaticon.com/512/2420/2420290.png" alt="" /></Link>
+        
       </div>
     </div>
   );

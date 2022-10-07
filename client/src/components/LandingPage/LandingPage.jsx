@@ -6,6 +6,7 @@ export default function LandingPage() {
   return (
     <div className="contenedorLanding">
       <img className="logoLanding" src="https://i.ibb.co/ZGbCxNM/logo-World.png" alt="" />
+      <br /><br /><br />
       <Link className="buttonLanding" to="/home">Home</Link>
     </div>
   );

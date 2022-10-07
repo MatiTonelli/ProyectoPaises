@@ -9,20 +9,22 @@
   flex-wrap: wrap;
   justify-content: center;
   padding-top: 50px;
-  width: 200vh;
   border-top-left-radius: 50px;
   border-bottom-left-radius: 50px;
   border-top: 1px solid #000000;
   border-left: 1px solid black;
   border-bottom: 1px solid black;
+  padding-bottom: 80px;
+  min-width: 90vw;
+  align-content: flex-start;
 }
 .countriesAndPaginate {
   display: flex;
+  justify-content: space-between;
 }
 
 .divPaises {
-  width: 40vh;
-  margin: 3vh;
+  width: 20vw;
 }
 
 .footerHome{
@@ -31,9 +33,10 @@
 }
 
 .logos{
-  width: 7vh;
-  margin-left: 4vh;
-  margin-right: 4vh;
+  width: 4vw;
+  min-width: 60px;
+  margin-left: 4vw;
+  margin-right: 4vw;
   border-radius: 15px;
 }
 
@@ -55,12 +58,19 @@
 
 .hrFooter{
   margin-bottom: -1vh;
-  width: 50vh;
+  width: 40vw;
   border: none;
   height: 1px;
   background-color: rgba(0, 0, 0, 0.507);
 }
 
+.links{
+  height: 40vh;
+  min-height: 100px;
+  /* margin-left: 2vw;
+  margin-right: 2vw; */
+}
+/* 
 @media screen and (max-width: 1857px){
   
 }
@@ -70,8 +80,41 @@
     margin: 1vh;
   }
 }
-
+ */
 @media screen and (max-width: 1080px){
-  
+  .divPaises{
+    width: 25vw;
+  }
 }
+
+@media screen and (max-width: 830px){
+  .divPaises{
+    width: 30vw;
+  }
+  .contenedorCountries{
+    min-width: 80vw;
+  }
+}
+
+@media screen and (max-width: 700px){
+  .divPaises{
+    width: 50vw;
+  }
+  .links{
+    height: 30vh;
+  }
+}
+
+@media screen and (max-width: 500px){
+  .contenedorCountries{
+    background-image: none;
+  }
+}
+
+@media screen and (max-width: 350px){
+  .contenedorCountries{
+    min-width: 60vw;
+  }
+}
+
 

@@ -240,44 +240,43 @@ export default function CreateActivity() {
                 <h3 className="titulosCreate">Seasons</h3>
                 <div className="seasonsNames">
                   <label className="container">
-                    Summer
                     <input
                       type="checkbox"
                       value={input.summer}
                       name="summer"
                       onChange={handleChangeSeasons}
                     />
-                    <span className="checkmark"></span>
+                    Summer
                   </label>
                   <label className="container">
-                    Winter
                     <input
                       type="checkbox"
                       value={input.winter}
                       name="winter"
                       onChange={handleChangeSeasons}
                     />
-                    <span className="checkmark"></span>
+                    Winter
+                    
                   </label>
                   <label className="container">
-                    Spring
                     <input
                       type="checkbox"
                       value={input.spring}
                       name="spring"
                       onChange={handleChangeSeasons}
                     />
-                    <span className="checkmark"></span>
+                    Spring
+                    
                   </label>
                   <label className="container">
-                    Autumn
                     <input
                       type="checkbox"
                       value={input.autumn}
                       name="autumn"
                       onChange={handleChangeSeasons}
                     />
-                    <span className="checkmark"></span>
+                    Autumn
+                    
                   </label>
                 </div>
 

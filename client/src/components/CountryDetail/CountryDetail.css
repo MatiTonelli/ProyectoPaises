@@ -330,27 +330,27 @@
 
     .nameActivity{
         width: 9vh;
-        font-size: 1.2vh;
+        font-size: 2vh;
     }
     
     .divStars{
         width: 9vh;
-        font-size: 1.2vh;
+        font-size: 2vh;
     }
     
     .durationActivity{
         width: 9vh;
-        font-size: 1.2vh;
+        font-size: 2vh;
     }
     
     .seasonsIconos{
         width: 9vh;
-        font-size: 1.2vh;
+        font-size: 2vh;
     }
     
     .contenedorActividad h3{
         width: 9vh;
-        font-size: 1.2vh;
+        font-size: 1.5vh;
     }
 
     .seasonsIcons{

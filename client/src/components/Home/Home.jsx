@@ -66,7 +66,7 @@ export default function Home() {
           />
           <div className="contenedorCountries">
             {countriesOfCurrentPage.length?countriesOfCurrentPage.map((c) => (
-              <Link to={`/country/${c.id}`}>
+              <Link className="links" to={`/country/${c.id}`}>
                 <div className="divPaises">
                   <CountryCard
                     flag={c.flag}

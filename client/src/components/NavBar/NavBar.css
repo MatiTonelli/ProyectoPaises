@@ -146,6 +146,9 @@
     .searchIcon{
         display: none;
     }
+    .createHomeButton{
+        height: 4vh;
+    }
 }
 
 @media screen and (max-width: 450){

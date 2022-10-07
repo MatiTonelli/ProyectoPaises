@@ -17,6 +17,14 @@ export default function CountryDetail(props) {
     let resultado = "";
     let str = String(numero);
     let j = 0;
+    if(str.includes('.')){
+        while(str[str.length-1]!="."){
+          resultado = str[str.length-1] + resultado;
+          str = str.slice(0, -1)
+        }
+        resultado = ',' + resultado;
+          str = str.slice(0, -1)
+    } 
     for (let i = str.length - 1; i >= 0; i--) {
       if (j % 3 === 0 && j !== 0) {
         resultado = "." + resultado;
