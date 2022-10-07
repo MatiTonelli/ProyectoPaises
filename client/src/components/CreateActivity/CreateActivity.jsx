@@ -154,7 +154,6 @@ export default function CreateActivity() {
   }
 
   function handleClosePupup(e) {
-    e.preventDefault()
     setSuccess(false)
   }
 
@@ -169,7 +168,7 @@ export default function CreateActivity() {
             />
             <h2>Thank you!</h2>
             <p>Your details has been successfully submitted.</p>
-            <button type="button" onClick={handleClosePupup}>Ok</button>
+            <Link to="/home"><button type="button" onClick={handleClosePupup}>Go home!</button></Link>
           </div>
         </div>
       )}
