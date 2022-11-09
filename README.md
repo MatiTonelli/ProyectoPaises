@@ -39,7 +39,7 @@ __En caso de que el deploy no funcione, pasos a seguir:__
 - __Node__: 12.18.3 o mayor
 - __NPM__: 6.14.16 o mayor
 
-## Default preview:
+## Computer preview:
 ![image](https://user-images.githubusercontent.com/85004434/200719450-ac60e609-37c3-41c9-baad-03f6a225b861.png)
 ![image](https://user-images.githubusercontent.com/85004434/200719565-a5cdce48-7cef-4d0f-9925-9f1a736f8d8a.png)
 ![image](https://user-images.githubusercontent.com/85004434/200719711-89554b7e-7637-4736-b5b4-f1d56c447523.png)
