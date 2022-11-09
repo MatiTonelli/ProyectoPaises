@@ -6,28 +6,45 @@
   <img height="200" src="./countries.png" />
 </p>
 
-## Objetivos del Proyecto
+## De que trata?
 
-- Construir una App utlizando React, Redux, Node y Sequelize.
-- Afirmar y conectar los conceptos aprendidos en la carrera.
-- Aprender mejores prácticas.
-- Aprender y practicar el workflow de GIT.
-- Usar y practicar testing.
+Es una App en la que puedes buscar paises, ordenarlos, filtrarlos por continente o por actividad turistica y puedes crear estas ultimas.
 
-## Horarios y Fechas
+## Tecnologias utilizadas
 
-El proyecto tendrá una duración máxima de tres semanas. En el caso de que completan todas las tareas antes de dicho lapso podrán avisar a su Instructor para coordinar una fecha de presentación del trabajo (DEMO).
+- NodeJS
+- React
+- Redux
+- PostgreSQL
+- Express
+- Sequelize
+- CSS puro
 
-## Comenzando
+## Como correr el proyecto
 
- 1. Forkear el repositorio para tener una copia del mismo en sus cuentas
- 2. Clonar el repositorio en sus computadoras para comenzar a trabajar
+__Deploy:__ find-your-activity.vercel.app
 
-Tendrán un `boilerplate` con la estructura general tanto del servidor como de cliente.
+__En caso de que el deploy no funcione, pasos a seguir:__
+- Clonar repositorio
+- En una terminal, estando en la carpeta **client**, ejecutar el comando `npm install`
+- Ejecutar el comando `npm start`
 
-__IMPORTANTE:__ Es necesario contar minimamente con la última versión estable de Node y NPM. Asegurarse de contar con ella para poder instalar correctamente las dependecias necesarias para correr el proyecto.
-
-Actualmente las versiónes necesarias son:
+## Versiones necesarias:
 
 - __Node__: 12.18.3 o mayor
 - __NPM__: 6.14.16 o mayor
+
+## Default preview:
+![image](https://user-images.githubusercontent.com/85004434/200719450-ac60e609-37c3-41c9-baad-03f6a225b861.png)
+![image](https://user-images.githubusercontent.com/85004434/200719565-a5cdce48-7cef-4d0f-9925-9f1a736f8d8a.png)
+![image](https://user-images.githubusercontent.com/85004434/200719711-89554b7e-7637-4736-b5b4-f1d56c447523.png)
+![image](https://user-images.githubusercontent.com/85004434/200720841-a84a0c98-0a9f-44bd-9131-8697207a74cf.png)
+
+## Mobile preview:
+__Dispositivo:__ iPhone XR
+![image](https://user-images.githubusercontent.com/85004434/200721113-750a0108-ffb0-471c-ab61-dafffb344509.png)
+![image](https://user-images.githubusercontent.com/85004434/200721029-54205f4e-90f4-47f2-8728-055f8a1a564f.png)
+![image](https://user-images.githubusercontent.com/85004434/200720680-34218c4b-2bec-45b2-af94-634650c508dc.png)
+![image](https://user-images.githubusercontent.com/85004434/200720781-d2ad4afa-edd4-47b7-b496-47dafd195236.png)
+
+
