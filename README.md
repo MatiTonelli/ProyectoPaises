@@ -24,7 +24,14 @@ __Deploy:__ find-your-activity.vercel.app
 
 __En caso de que el deploy no funcione, pasos a seguir:__
 - Clonar repositorio
-- En una terminal, estando en la carpeta **client**, ejecutar el comando `npm install`
+
+**Back**
+- En una terminal, estando en la carpeta **api**, ejecutar el comando `npm install`
+- Ejecutar el comando `npm start`
+
+**Front**
+
+- En otra terminal, estando en la carpeta **client**, ejecutar el comando `npm install`
 - Ejecutar el comando `npm start`
 
 ## Versiones necesarias:
