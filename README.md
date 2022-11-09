@@ -42,6 +42,8 @@ __En caso de que el deploy no funcione, pasos a seguir:__
 
 ## Mobile preview:
 __Dispositivo:__ iPhone XR
+
+
 ![image](https://user-images.githubusercontent.com/85004434/200721113-750a0108-ffb0-471c-ab61-dafffb344509.png)
 ![image](https://user-images.githubusercontent.com/85004434/200721029-54205f4e-90f4-47f2-8728-055f8a1a564f.png)
 ![image](https://user-images.githubusercontent.com/85004434/200720680-34218c4b-2bec-45b2-af94-634650c508dc.png)
